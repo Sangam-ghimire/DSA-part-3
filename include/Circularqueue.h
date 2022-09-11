@@ -3,18 +3,18 @@
 
 #define MAX 10
 
-class Arrayqueue : public Queue
+class Circulararrayqueue : public Queue
 {
 public:
     int frontt;
     int rear;
 
-    Arrayqueue()
+    Circulararrayqueue()
     {
         frontt = -1;
         rear = -1;
     }
-    ~Arrayqueue() {}
+    ~Circulararrayqueue() {}
 
     int arr[MAX];
 

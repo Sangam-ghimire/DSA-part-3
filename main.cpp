@@ -1,4 +1,5 @@
 #include "Arrayqueue.h"
+#include "Circularqueue.h"
 #include <iostream>
 
 int main()
@@ -10,7 +11,7 @@ int main()
     Aq->enqueue(59);
     Aq->isFull() ? std::cout << "Is FULL\n" : std::cout << "ISN'T FULL\n";
 
-    std::cout << "\n"
+    std::cout << "\nThe dequed element is "
               << Aq->dequeue();
     std::cout << "\nThe front element is " << Aq->front();
     std::cout << "\nThe back element is " << Aq->back();
@@ -19,4 +20,21 @@ int main()
               << Aq->dequeue();
     std::cout << "\n"
               << Aq->dequeue();
+
+    Circulararrayqueue *Cq = new Circulararrayqueue();
+    Cq->isEmpty() ? std::cout << "\nIs EMPTY\n" : std::cout << "ISN'T EMPTY\n";
+    Cq->enqueue(85);
+    Cq->enqueue(88);
+    Cq->enqueue(65);
+    Cq->isFull() ? std::cout << "Is FULL\n" : std::cout << "ISN'T FULL\n";
+
+    std::cout << "\nThe dequed element is"
+              << Cq->dequeue();
+    std::cout << "\nThe front element is " << Cq->front();
+    std::cout << "\nThe back element is " << Cq->back();
+
+    std::cout << "\n"
+              << Cq->dequeue();
+    std::cout << "\n"
+              << Cq->dequeue();
 }

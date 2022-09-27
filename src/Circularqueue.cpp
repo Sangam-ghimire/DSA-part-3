@@ -1,7 +1,7 @@
 #include "Circularqueue.h"
 #include <iostream>
 
-void Circularqueue::enqueue(int element)
+void Circulararrayqueue::enqueue(int element)
 {
     if (isFull() != true)
     {
@@ -13,7 +13,7 @@ void Circularqueue::enqueue(int element)
         std::cout << "Queue overflown" << std::endl;
     }
 }
-int Circularqueue::dequeue()
+int Circulararrayqueue::dequeue()
 {
     // If the queue is not empty, increase front by 1 and return the value at index front
     // of the array.
@@ -26,7 +26,7 @@ int Circularqueue::dequeue()
     std::cout << "Queue Underflown";
     return 0;
 }
-bool Circularqueue::isEmpty()
+bool Circulararrayqueue::isEmpty()
 {
     if (frontt == rear)
     {
@@ -34,7 +34,7 @@ bool Circularqueue::isEmpty()
     }
     return false;
 }
-bool Circularqueue::isFull()
+bool Circulararrayqueue::isFull()
 {
     if (rear == MAX - 1)
     {
@@ -42,7 +42,7 @@ bool Circularqueue::isFull()
     }
     return false;
 }
-int Circularqueue::front()
+int Circulararrayqueue::front()
 {
     if (frontt != rear)
     {
@@ -50,7 +50,7 @@ int Circularqueue::front()
     }
     return 0;
 }
-int Circularqueue::back()
+int Circulararrayqueue::back()
 {
     if (frontt == rear)
     {
